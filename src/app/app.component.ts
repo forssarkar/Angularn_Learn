@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HMS_Angular';
+  name = "Susanta" ;
+  CallSomeLogic = () => {
+    alert("hi")
+  }
 }
