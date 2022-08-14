@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServerComponenet } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { SuccessAlertComponent } from './successalert/successalert.component';
+import { WarningalertComponent } from './warningalert/warningalert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponenet,
-    ServersComponent
+    ServersComponent,
+    SuccessAlertComponent,
+    WarningalertComponent
   ],
   imports: [
     BrowserModule,
