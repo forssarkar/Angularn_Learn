@@ -1,2 +1,14 @@
 <h3> In Servers Component</h3>
 <p>servers works!</p>
+<label >Server Name</label>
+<!-- <input 
+    type ="text" 
+    class="form-control" 
+    (input)="onUpdateServerName($event)"> -->
+<input type ="text" class="form-control"  [(ngModel)] = "serverName"> 
+<p></p>
+<button class ="btn btn-primary" [disabled] ="!allowNewServer" (click)="onCreateServer()">Allow New Server</button>
+<p>{{serverCreationStatus}} , Total no of server : {{this.noOfServer}}</p>
+{{serverName}}
+<app-success-alert></app-success-alert>
+
